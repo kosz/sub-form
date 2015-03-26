@@ -13,8 +13,10 @@
   },
   "dependencies": {
     "angular": "~1.4",
-    
-    "angular-material": "latest", 
-    "angular-route": "~1.4"
+    "angular-material": "latest",
+    "angular-route": "~1.4",
+    "ngFx": "~1.0.6",
+    "components-font-awesome": "~4.3.0",
+    "restangular": "~1.4.0"
   }
 }
