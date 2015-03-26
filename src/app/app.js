@@ -11,8 +11,10 @@
   http://localhost:8000
  */
 
-angular.module('sub-form', [ 'ngMaterial',
-'ngRoute'
+angular.module('sub-form', [
+  'ngMaterial',
+  'ngMessages',
+  'ngRoute'
 ])
 .config([ '$routeProvider', '$locationProvider', function($routeProvider,$locationProvider) {
 

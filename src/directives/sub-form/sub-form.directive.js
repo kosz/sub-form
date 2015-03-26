@@ -6,7 +6,7 @@ angular.module('sub-form')
       restrict: 'E',
       scope: true,
       controller: 'ach.SubFormCtrl',
-      controllerAs: 'subForm',
+      controllerAs: 'subFormCtrl',
       templateUrl: 'directives/sub-form/sub-form.html',
       link: function (scope) {
 

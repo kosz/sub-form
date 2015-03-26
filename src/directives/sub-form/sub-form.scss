@@ -1,12 +1,28 @@
 .sub-form {
 
+  $side-padding: 0;
+
   width: 100%;
+  padding-left: $side-padding;
+  padding-right: $side-padding;
 
   .md-fab {
     position: relative;
+    z-index: 2;
     bottom: -25px;
-    right: 40px;
+    right: 20px;
     float: right;
+  }
+
+  button:disabled {
+    background-color: white !important;
+    .fa {
+      color: green;
+    }
+  }
+
+  .inputdemoErrors .inputErrorsApp {
+    min-height: 48px;
   }
 
 }

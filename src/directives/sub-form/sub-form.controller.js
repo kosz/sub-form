@@ -6,4 +6,6 @@ angular.module('sub-form')
 
       var self = this;
 
+      self.submitted = false;
+
     }]);

@@ -1,5 +1,32 @@
 md-whiteframe.md-whiteframe-z1.sub-form(flex)
-  p Test
-  form
-  md-button.md-fab.md-primary(aria-label="Subscribe") 
-    i.fa.fa-check
+  md-toolbar.md-accent
+    .md-toolbar-tools
+      span.md-flex Mailing List
+
+  //md-progress-linear.md-warn(md-mode="indeterminate")
+  form(name="subFormCtrl.subForm")
+    div(layout layout-sm="column" layout-md="column")
+
+      md-input-container(flex)
+        label First Name
+        input(ng-model="firstName" placeholder="First Name")
+
+      md-input-container(flex)
+        label Last Name
+        input(ng-model="lastName" placeholder="Last Name")
+
+      md-input-container(flex)
+        label Email
+        input(type="email" 
+              required
+              name="email" 
+              ng-model="subFormCtrl.email"
+              placeholder="Email")
+        div(ng-messages="subFormCtrl.subForm.email.$error" 
+            ng-if="!subFormCtrl.subForm.email.$pristine")
+          div(ng-message="email") Should be a valid e-mail
+          div(ng-message="required") Email is required 
+
+    md-button.md-fab.md-primary(aria-label="Subscribe" ng-disabled="subFormCtrl.submitted")
+      md-tooltip Submit
+      i.fa.fa-check
