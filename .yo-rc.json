@@ -1,0 +1,6 @@
+{
+  "generator-modular": {
+    "name": "sub-form",
+    "uxFramework": "material"
+  }
+}
